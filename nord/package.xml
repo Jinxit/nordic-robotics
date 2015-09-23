@@ -6,11 +6,11 @@
   </description>
   <license>MIT</license>
 
-  <url>http://..</url>
+  <url>https://github.com/Jinxit/nordic-robotics</url>
 
-  <maintainer email="TODO@kth.se">Magnús Thór Benediktsson</maintainer>
-  <maintainer email="TODO@kth.se">Gustav Sandström</maintainer>
-  <maintainer email="TODO@kth.se">Tobias Lundin</maintainer>
+  <maintainer email="bened@@kth.se">Magnús Thór Benediktsson</maintainer>
+  <maintainer email="gsands@kth.se">Gustav Sandström</maintainer>
+  <maintainer email="tolundi@kth.se">Tobias Lundin</maintainer>
   <maintainer email="lucasas@kth.se">Lucas Åström</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>
