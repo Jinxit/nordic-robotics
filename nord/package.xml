@@ -1,0 +1,22 @@
+<package>
+  <name>nord</name>
+  <version>0.1.0</version>
+  <description>
+    NØRDIC
+  </description>
+  <license>MIT</license>
+
+  <url>http://..</url>
+
+  <maintainer email="TODO@kth.se">Magnús Thór Benediktsson</maintainer>
+  <maintainer email="TODO@kth.se">Gustav Sandström</maintainer>
+  <maintainer email="TODO@kth.se">Tobias Lundin</maintainer>
+  <maintainer email="lucasas@kth.se">Lucas Åström</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
