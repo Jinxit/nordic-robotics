@@ -1,2 +1,4 @@
 git@github.com:nordic-robotics/nord_planning.git
 git@github.com:nordic-robotics/nord_img_closestpoint.git
+git@github.com:nordic-robotics/nord_messages.git
+git@github.com:nordic-robotics/nord_motor_control.git
