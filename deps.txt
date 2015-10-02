@@ -1,1 +1,1 @@
-https://github.com/nordic-robotics/nord_planning
+git@github.com:nordic-robotics/nord_planning.git
