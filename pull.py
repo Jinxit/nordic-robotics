@@ -13,7 +13,7 @@ dir = os.getcwd() + "/"
 
 with open("deps.txt") as f:
     for line in f:
-        folder = line.split("/")[-1:][0][:-4]
+        folder = line.split("/")[-1:][0][:-5]
         call(("mkdir -p %s" % folder).split(" "))
         os.chdir(folder)
         unpushed = check_output("git log origin/master..master".split(" "))
@@ -32,7 +32,7 @@ with open("deps.txt") as f:
             print problem_text
             choice = raw_input("%s has %s changes! Do you wish to overwrite changes? (y/n) " % (folder, problem))
             while choice != "y" and choice != "n":
-                choice = raw_input("Make a choice, nerd! (y/n)")
+                choice = raw_input("Make a choice, nerd! (y/n) ")
             if choice == "n":
                 print "Aborting..."
                 sys.exit(0)
