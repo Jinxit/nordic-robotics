@@ -14,7 +14,7 @@ dir = os.getcwd() + "/"
 with open("deps.txt") as f:
     for line in f:
         folder = line.split("/")[-1:][0][:-5]
-        call(("mkdir -p %s" % folder).split(" "))
+        call(("mkdir -p %s" % (folder)).split(" "))
         os.chdir(folder)
         unpushed = check_output("git log origin/master..master".split(" "))
         uncommitted = check_output("git status --porcelain".split(" "))
