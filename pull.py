@@ -21,7 +21,7 @@ with open("deps.txt") as f:
             call(("mkdir -p %s" % (folder)).split(" "))
 
             os.chdir(folder)
-            unpushed = check_output("git log origin/master..master".split(" "))
+            unpushed = check_output("git log @{u}..".split(" "))
             uncommitted = check_output("git status --porcelain".split(" "))
 
             if unpushed:
