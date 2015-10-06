@@ -45,4 +45,4 @@ with open("deps.txt") as f:
 
         os.chdir(dir)
         call(("rm -R -f %s" % (folder)).split(" "))
-        call(("git clone %s--depth=1 %s" % (tag, line)).split(" "))
+        call(("git clone %s--depth=1 --no-single-branch %s" % (tag, line)).split(" "))
