@@ -33,12 +33,15 @@ with open("deps.txt") as f:
 
             if problem:
                 print problem_text
-                choice = raw_input("%s has %s changes! Do you wish to overwrite changes? (y/n) " % (folder, problem))
-                while choice != "y" and choice != "n":
+                choice = raw_input("%s has %s changes! Do you wish to overwrite changes? (y/n/skip) " % (folder, problem))
+                while choice != "y" and choice != "n" and choice != "skip":
                     choice = raw_input("Make a choice, nerd! (y/n) ")
                 if choice == "n":
                     print "Aborting..."
                     sys.exit(0)
+                if choice == "skip":
+                    print "Skipping!"
+                    continue
 
         os.chdir(dir)
         call(("rm -R -f %s" % (folder)).split(" "))
