@@ -5,3 +5,5 @@ git@github.com:nordic-robotics/nord_motor_controller.git
 git@github.com:nordic-robotics/nord_launch.git
 git@github.com:nordic-robotics/imu_tools.git
 git@github.com:nordic-robotics/nord_imu.git
+git@github.com:nordic-robotics/nord_estimation.git
+git@github.com:nordic-robotics/nord_vision.git
